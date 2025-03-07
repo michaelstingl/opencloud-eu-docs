@@ -17,10 +17,9 @@ This example is on Linux Ubuntu 24.04 distribution!
 
 - Update your package list:
    ```bash
-   sudo apt update && upgrade
+   sudo apt update && apt upgrade
    ```
-   <img src={require("./img/bare-metal/apt-update-&&-upgrade.png").default} alt="sudo apt" width="1920"/>
-
+   
 - Install Git using the following command:
    ```bash
    sudo apt install git
@@ -71,23 +70,10 @@ This example is on Linux Ubuntu 24.04 distribution!
    ```
    <img src={require("./img/bare-metal/cd-opencloud.png").default} alt="cd opencloud" width="1920"/>
    
-- Run the generate process:
+- Run the build generate process:
    ```bash
-   make clean generate
+   make clean generate -C opencloud build
    ```
-   <img src={require("./img/bare-metal/make-clean-generate.png").default} alt="make clean generate" width="1920"/>
-
-- Navigate to the OpenCloud subdirectory:
-   ```bash
-   cd opencloud
-   ``` 
-   <img src={require("./img/bare-metal/cd-opencloud-subdirectory.png").default} alt="cd opencloud subdirectory" width="1920"/>
-
-- Build OpenCloud:
-   ```bash
-   make clean build
-   ```
-   <img src={require("./img/bare-metal/make-clean-build.png").default} alt="make clean build" width="1920"/>
 
 - Initialize OpenCloud with insecure configuration and set an admin password:
    ```bash
